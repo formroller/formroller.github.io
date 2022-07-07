@@ -1,1 +1,6 @@
-test category..
+---
+layout: category
+title: Test Category
+---
+
+test
