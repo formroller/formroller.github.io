@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Python 문자열 
+title: "Python 문자열" 
 comments: true
 categories:
   - Python

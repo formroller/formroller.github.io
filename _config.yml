@@ -1,6 +1,7 @@
 # Dependencies
 markdown:         kramdown
 highlighter:      rouge
+futrue: true
 
 # Setup
 title:            '취준 로그'  
@@ -16,7 +17,7 @@ baseurl:         ""
 locale:			"ko-KR"
 author:
   name:           'Yong'
-  url:            https://twitter.com/fongandrewc
+  url:            ''
 
 paginate:         10
 # paginate_path:    '/page:num'
