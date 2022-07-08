@@ -1,7 +1,6 @@
 ---
 layout: post
-published: true
-title: "print/string" 
+title: Python 문자열  
 categories:
   - Python
 tags:
