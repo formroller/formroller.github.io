@@ -1,13 +1,23 @@
 ---
+
 layout: post
+
 title: "Python 문자열" 
+
 comments: true
+
 categories:
+
   - Python
+
 tags:
+
   - content
+
   - Python
+
   - basic
+
   - string
 ---
 
@@ -67,16 +77,15 @@ v1 = 'select ename </br>
    1. a.startswith : 문자열이 지정된 값으로 시작하면 True, 아닐 경우 False 출력
     ```
     a1='abcde'
-    
     a1.startswith(suffix, # 시작값
                   start,  # 검사 시작 위치
                   end     # 검사 끝 위치
                   )
     a1.startswith('a',1)   # a1의 두번째 글자가 'a'로 시작하는지 묻는다.
     a1.startswith('a',1,3) # a1[1:3] 'a'로 시작하는지 묻는다.  
-    
+   
     (startswith와 반대로 지정된 값으로 끝나는지 확인하는 endswith가 있다.)
-    ```
+   ```
 
 3. `strip`
    1. 공백 제거함수이며, 방향에 따라 'l/rstrip' 또는 'strip'으로 사용한다.
