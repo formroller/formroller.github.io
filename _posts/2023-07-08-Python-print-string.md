@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Basic print/string" 
+published: true
+title: "print/string" 
 categories:
   - Python
 tags:
