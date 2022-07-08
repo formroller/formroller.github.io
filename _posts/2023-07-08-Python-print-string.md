@@ -4,9 +4,10 @@ title: "Python : print/string basic"
 categories:
   - Python 
 tags:
- - content
- - Python
- - basic
+  - content
+  - Python
+  - basic
+  - string
 ---
 
 # print 함수
@@ -138,6 +139,7 @@ jumin='901213-1234567'
 vid='abc1234~!'
 ```
 1. ename의 두번째 글자가 'm'으로 시작하는지 알아보자
-<div style="color:white">1) ename[1]=='m'</div>
-<div style="color:white">2) ename.startswith('m',2)</div>
-
+```
+ename[1]=='m'
+ename.startswith('m',2)
+```
