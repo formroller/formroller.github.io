@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Python : print/string basic"  
+title: "Basic print/string" 
 categories:
-  - Python 
+  - Python
 tags:
   - content
   - Python
