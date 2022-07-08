@@ -1,11 +1,11 @@
 # Dependencies
-markdown:         kr
+markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            '생각 정리'  
+title:            '취준 로그'  
 tagline:          'A Jekyll theme'
-description:      '배운걸 정리하는 블로그'
+description:      '쓰다보면 쓸모가 있겠지'
 url:              "https://formroller.github.io"
 baseurl:         ""
                   # the optional subpath of your site, e.g. "/blog"
