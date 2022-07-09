@@ -1,36 +1,28 @@
 ---
 layout: post
-
-title: "리스트(list)" 
-
-comments: true
-
-categories:
-
-  - python
-
-tags:
-
+title: '리스트(list)'
+categories: python
+comment: true
+tag:
   - content
-
-  - Python
-
+  - python
   - basic
-
   - list
-----
-  
+---
+
 # 1.[list](https://python-reference.readthedocs.io/en/latest/docs/list/)
- - list는 변경할 수 있는 순서 및 색인화된 객체 모음이다. 
- - list는 쉼표로 구분된 표현식 목록을 대괄호'[]'로 묶어 생성한다. 
-   
+- list는 변경할 수 있는 순서 및 색인화된 객체 모음이다. 
+- list는 쉼표로 구분된 표현식 목록을 대괄호'[]'로 묶어 생성한다.
 
 1. `생성`
- ```
-    L1 = [1,2,3]
-    L2 = [1,2,'a']    # 서로 다른 데이터 입력 가능
-    L3 = [1,2,[3,4]]  # 리스트 중첩 가능
- ```
+```
+ L1 = [1,2,3]
+ L2 = [1,2,'a']    # 서로 다른 데이터 입력 가능
+ L3 = [1,2,[3,4]]  # 리스트 중첩 가능
+```
+
+
+
 
 2.`색인(Indexing)`
  ```
