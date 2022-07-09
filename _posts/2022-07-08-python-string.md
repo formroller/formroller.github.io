@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: "Python 문자열" 
+title: "문자열(string)" 
 
 comments: true
 
@@ -148,7 +148,19 @@ jumin='901213-1234567'
 vid='abc1234~!'
 ```
 1. ename의 두번째 글자가 'm'으로 시작하는지 알아보자
-```
-ename[1]=='m'
-ename.startswith('m',2)
-```
+<div style="color:white">ename[1]=='m'</div>
+<div style="color:white">ename.startswith('m',2)</div>
+
+2. tel에서 국번(345) 출력하기
+<div style="color:white">방법1</div>
+<div style="color:white">v1 = tel.find(')')</div>
+<div style="color:white">v2 = tel.find('-')</div>
+<div style="color:white">v1[v1+1:v2]</div>
+
+<div style="color:white">방법2</div>
+<div style="color:white">tel.split(')').split('-')[0]</div>
+
+3. jumin에서 여자인지 확인하기
+<div style="color:white">1) jumin.split('-')[1][1]=='2'</div>
+<div style="color:white">2) jumin[7]=='2'</div>
+<div style="color:white">3) jumin.startswith('2',7)</div>

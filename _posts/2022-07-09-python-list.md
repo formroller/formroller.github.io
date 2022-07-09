@@ -1,0 +1,157 @@
+---
+layout: post
+
+title: "리스트(list)" 
+
+comments: true
+
+categories:
+
+  - Python
+
+tags:
+
+  - content
+
+  - Python
+
+  - basic
+
+  - list
+----
+ 
+# 1.[list](https://python-reference.readthedocs.io/en/latest/docs/list/)
+ - list는 변경할 수 있는 순서 및 색인화된 객체 모음이다. 
+ - list는 쉼표로 구분된 표현식 목록을 대괄호'[]'로 묶어 생성한다. 
+ > (참조) https://python-reference.readthedocs.io/en/latest/docs/list/  
+
+1. `생성`
+ ```
+    L1 = [1,2,3]
+    L2 = [1,2,'a']    # 서로 다른 데이터 입력 가능
+    L3 = [1,2,[3,4]]  # 리스트 중첩 가능
+ ```
+
+2.`색인(Indexing)`
+ ```
+    L1[0]    # 정수(position) 색인 가능
+    L1[0:2]  # 슬라이스 색인 (0부터 1까지 출력)
+    L1[1:]   # 슬라이스 색인 (첫 번째 자리부터 끝까지 출력)
+    L1[:3]   # 슬라이스 색인 (처음부터 2까지 출력)
+ 
+    L1[[0,2]]  # 리스트 묶어서 색인 불가. (정수값 or 연속적인 범위만 색인 가능)
+               # 동시에 여러개 전달 불가
+    L1[-1]     # -1은 맨 마지막 값을 출력한다. 
+               # [::-1] 전체 값을 역순으로 출력 -> reverse indexing
+    
+    L2[::2]    # start:end:by / strat부터 end까지 by 씩 증가한 값
+ ```
+
+3.`수정`
+ ```
+  L1[0] = 10;
+  > [10,1,2,3]     
+ 
+  L1[1] = [20,30]; L1 # 중첩 리스트로 생성된다.(선택원소 1개, 넣을 값 多)
+  > [1,[10,20],3]
+  
+  L1[1:3] = [20,30]; L1
+  >[1,20,30]
+ ```
+
+4.`확장`
+ - 벡터 안에 벡터 넣기
+ ```
+ L1.append(40)
+ > [1,2,3,40]
+ 
+ L1[4]
+ > IndexError: list index out of range
+ > 범위를 넘어선 값 입력 불가.(새로운 위치에 값 할당 불가)
+ 
+ L1=[1,2,3]
+ L2=[4,5,6]
+ 
+ ## 리스트 확장
+ L1+L2    
+ > [1,2,3,4,5,6]
+ ## 리스트 확장 반복
+ L1 * 3
+ > [1, 2, 3, 1, 2, 3, 1, 2, 3]
+ ## 리스트 원소 추가
+ L1 = L1 + [4]
+ > [1,2,3,4]
+ ## [추가 원소] 즉시 반영
+ L1.extend([5])
+ > [1,2,3,5]
+ ```
+5.`삭제`
+ ```
+ del(L1[3])  # 원소의 삭제
+ del(L1[0])  # 중간위치 원소 삭제 가능 (R에서는 불가)
+ del(L1)     # 객체 전체 삭제 (=drop)
+ L1=[]       # 원소 삭제 (=truncate)
+ ```
+
+6.`lambda` 
+ - 사용자 정의 함수
+ - (장) 간단함  <> (단) 리턴만 가능(복잡합 조건, 반복 처리 불가 및 if/for문 불가)
+ 
+1.기존 함수 선언 방식
+ ```
+ - def 함수명():
+ ```
+2.lambda 방식
+ ```
+ lambda input : output
+```
+ * 예제) 입력된 값의 10% 증가값을 리턴하는 함수 생성
+  ```
+ f1 = lambda x : x + 1.1
+ f1(10) 
+ > 11.1
+  ```
+ * 예제) 두 수를 입력받아 두 수의 합 리턴
+ ```
+ f2 = lambda x , y=0 : x+y  # 인자의 기본값 선언 가능
+ 
+ f2 = lambda x=0 , y : x+y  # 앞의 인자에 기본값 지정하면 뒤에 오는 인자도 기본값 지정해야한다
+ >> f2 = lambda x=0, y=0 :x+y
+ ```
+
+## 2.리스트의 벡터연산
+- 리스트는 벡터 연산(각 원소의 반복적용) 불가
+    - L1 + 1 (불가)
+ * 예제) L1의 각 원소에 10% 인상된 값 연산
+ ```
+ f1(L1)            # 불가
+ map(f1,L1)        # 가능 (map 함수에 의한 반복적용)
+ list(map(l1,L1))  # 사용자가 출력 형식 지정하지 않으면 메모리에 저장만 한다. (=> 리스트에 담아야한다.)
+                   # 매핑처리는 map함수 통해 각 원소별 반복 적용 (=sapply in R)
+ ```
+
+
+## 3. 연습문제
+ ```
+ 다음의 리스트를 생성
+ L1 = [1,2,3,4]
+ L2 = [10,20,30,40]
+ L3 = [100,200,300]
+ L4 = ['서울','부산','대전','전주']
+ L5 = ['abc@naver.com','a123@hanmail.net']
+ ```
+ 1. L2의 L1승 출력. (10^1, 20^2)
+<div style="color:white">t1=lambda x,y : x**y</div>
+<div style="color:white">list(map(t1,L2,L1))</div>
+
+ 2. L4의 값에 '시'를 붙여 출력  
+- L4 + '시'  # 불가
+<div style="color:white">t2=lambda x,y='시':x+y</div>
+<div style="color:white">list(map(t2,L4))</div>
+<div style="color:white">또는</div>
+<div style="color:white">t2=lambda x : x + '시'</div>
+<div style="color:white">list(map(t2,L4))</div>
+
+ 3. L5에서 이메일 아이디만 출력
+<div style="color:white">t3=lambda x : x.split('@')[0]</div>
+<div style="color:white">list(map(t3, L5))</div>
