@@ -7,7 +7,7 @@ comments: true
 
 categories:
 
-  - Python
+  - python
 
 tags:
 
@@ -164,3 +164,4 @@ vid='abc1234~!'
 <div style="color:white">1) jumin.split('-')[1][1]=='2'</div>
 <div style="color:white">2) jumin[7]=='2'</div>
 <div style="color:white">3) jumin.startswith('2',7)</div>
+

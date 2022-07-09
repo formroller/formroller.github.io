@@ -1,5 +1,5 @@
 ---
 layout : category
-title : Python
+title : python
 ---
 Python basic 
