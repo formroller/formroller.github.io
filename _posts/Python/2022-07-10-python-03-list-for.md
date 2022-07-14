@@ -1,6 +1,7 @@
 ---
 layout: post
 title: '리스트와 반복문(list / for)'
+order: 3
 comment: true
 categories: 'python'
 tag:
@@ -82,6 +83,7 @@ for i in L1 :
  ```
 
 1. `중첩 for문`
+
  ```
  L1 = [1,2,3]
  L2 = [[1,2,3],[4,8,45],[71,80,19]]
@@ -108,13 +110,16 @@ for i in L1 :
  ```
 
 ## [while문](https://docs.python.org/3/tutorial/controlflow.html)
+
  ```
  i=0
 while i < 11:
     print(i)
     i = i + 1
  ```
+
  * 예제) 1-100까지 짝수 합 출력
+
  ```
  1.기본 while 구문
  vsum=0; i=1

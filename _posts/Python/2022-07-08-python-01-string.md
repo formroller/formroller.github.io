@@ -1,8 +1,8 @@
 ---
 layout: post
 
-title: "문자열(string)" 
-
+title: "데이터 다루기-변수의 사용" 
+order: 1
 comments: true
 
 categories:
@@ -26,8 +26,18 @@ print('%d' % 1)        	# 정수 형식 출력 (%d)
 print('%f' % 10)  	  # 실수 형식 출력 (%f)
 print('%s' % 'abcde')     # 문자열 형식 출력 (%s) 
 ```
-# 색인(Indexing)
-파이썬은 위치값이 0부터 시작한다. 
+# 변수
+- 데이터를 담는 메모리 공간
+- 변수에는 수, 텍스트, 목록, 이미지 데이터 등을 담을 수 있다.
+
+-변수명 규칙
+ - 대/소문자를 구분한다. (myVar != MyVar)
+ - 문자, 숫자, 언더바(_)를 포함할 수 있으나, 숫자로 시작하면 안된다. 
+ - 예약어는 변수명으로 사용할 수 없다.
+
+# 텍스트 다루기
+1.`색인(Indexing)`  
+ 파이썬은 위치값이 0부터 시작한다. 
 ```
  v1='abcdefg'일때
  v1[1] (문자열 색인 가능-R에서는 불가)) 
@@ -37,7 +47,7 @@ print('%s' % 'abcde')     # 문자열 형식 출력 (%s)
  v1[1:3]
  'bc'
  ```
-# escape 문자
+2. `escape 문자`
 ```
 print('\')  # 출력 오류
 > SyntaxError: EOL while scanning string literal
@@ -47,7 +57,7 @@ print('a\nc')
 >>a
   c
 ```
-# .format
+3.`.format`  
 {0:d} {1:5d} {2:0d} -> {자릿수:포맷}
 ```
  print('%d %5d %05d' % (123, 123,123))
@@ -55,12 +65,12 @@ print('a\nc')
 ``` 
 
 
-# 문자열 사용
+## 문자열 사용
 ```
 v1 = 'select ename </br> 
       from emp'
 ```
-위 코드의 경우 enter(\<br>) 삽입으로 인해 에러가 발생한다.  
+위 코드의 경우 enter(\<br>) 삽입으로 인해 에러가 발생한다.  <br>
 따라서 enter 삽입시 \`\`\`  \`\`\`\`로 묶어야 한다.
 
 

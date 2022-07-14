@@ -2,6 +2,7 @@
 layout: post
 title: '중첩 for문 (nested for loop)과 튜플(tuple)'
 comment: true
+order: 4
 categories: 'python'
 tag:
  - content

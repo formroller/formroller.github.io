@@ -1,5 +1,5 @@
 ---
 layout : category
-title : R basic
+title : R
 ---
 R basic

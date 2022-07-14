@@ -3,9 +3,12 @@ layout: default
 ---
 <header>
   {% include back-link.html %}
-  <h1 class="page-title">{{ page.title }}</h1>
-</header>
+<h1 class="page-title">{{ page.title }}</h1>
+  </header>
 <div class="content">
   {{ content }}
+</div>
+<div>
+  {{ post.date | date:'%y-%m-%d %R' }}
 </div>
 {% include back-link.html %}
