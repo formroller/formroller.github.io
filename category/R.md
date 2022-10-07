@@ -1,5 +1,5 @@
 ---
 layout : category
-title : R
+title : JAVA
 ---
-R basic
+java basic
