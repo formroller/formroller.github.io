@@ -2,6 +2,13 @@
 layout : post
 category : Java
 title : "[1-2] 안녕 세상!(Hell World!)"
+tag :
+ - Java
+ - JDK
+ - Homebrew
+ - WAS
+ - HelloWorld
+ - print
 ---
 1.Java 설치하기(MAC)
 ---
