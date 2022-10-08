@@ -71,6 +71,6 @@ comments: true
 
 5. 증감연산(++,--)
    1. **i++** : 값이 참조된 후 증가
-   2. **++ㅑ** : 값이 참조되기 전 증가
+   2. **++i** : 값이 참조되기 전 증가
 
 > [참고 - 깃블로그 수식 넣기](https://mkkim85.github.io/blog-apply-mathjax-to-jekyll-and-github-pages)
