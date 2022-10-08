@@ -29,7 +29,7 @@ public calss 클래스명{
     [public|private|protected] [static] (리턴자료형|void) 메소드명2 (입력자료형 매개변수,...){
         명령문(statement);
         ...
-    }
+    } 
     ...
 }    
 ```
