@@ -1,7 +1,10 @@
-# Dependencies
+# Dependencies + Math equation
 markdown:         kramdown
 highlighter:      rouge
 futrue: true
+lsi : false
+excerpt_separator: \n\n
+incremental: false
 
 # Setup
 title:            '취준 로그'  
@@ -35,5 +38,7 @@ sidebar_home_link:  true
                                 # page. If you change your paginate_path,
                                 # set this to the root of the paginate_path
                                 # to enable a separate blog link.
+
+
 
 # ref : https://velog.io/@eona1301/Github-Blog-Jekyll-minimal-mistakes

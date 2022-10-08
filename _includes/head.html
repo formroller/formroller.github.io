@@ -17,7 +17,8 @@
   {% include google-analytics.html %}
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" />
+<!--  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" />&lt;!&ndash;원본 코드(오류 생성)&ndash;&gt;-->
+  <link rel="stylesheet" href={{"/assets/css/main.css" | relative_url}}/> <!--재작성 코드-->
   {% include font-includes.html %}
 
   <!-- Icons -->
@@ -27,4 +28,9 @@
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.feed.path | default: 'feed.xml' | relative_url }}" />
 
   {% include custom-head.html %}
+
+  <!-- Math LaTex -->
+  {% if page.use_math %}
+    {% include mathjax_support.html %}
+  {% endif %}
 </head>
